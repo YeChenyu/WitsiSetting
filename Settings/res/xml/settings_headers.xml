@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<preference-headers
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       >
+    <!-- WIRELESS and NETWORKS -->
+    <header android:id="@+id/wireless_section"
+        android:title="@string/header_category_wireless_networks" />
+
+    <!-- Wifi -->
+    <header
+        android:id="@+id/wifi_settings"
+        android:fragment="com.android.settings.wifi.WifiSettings"
+        android:title="@string/wifi_settings_title"
+        android:icon="@drawable/setting_wifi" 
+        />
+
+    <!-- Bluetooth -->
+    <header
+        android:id="@+id/bluetooth_settings"
+        android:fragment="com.android.settings.bluetooth.BluetoothSettings"
+        android:title="@string/bluetooth_settings_title"
+        android:icon="@drawable/setting_bluetooth" />
+    
+    
+    <!-- Wireless Networks -->
+    <header
+        android:id="@+id/wireless_networks_settings"
+        android:fragment="com.witsi.settings.wireless_location.WirelessAndLocationSettings"
+        android:title="@string/wireless_networks_settings_title"
+         />
+
+
+    <!-- DEVICE -->
+    <header 
+        android:id="@+id/device_section"
+        android:title="@string/header_category_device" />
+    
+
+    <!-- HardwareTest-->
+    <header
+        android:id="@+id/hardwaretest_settings"
+        android:icon="@drawable/ic_launcher_witsi"
+        android:title="@string/hardwaretest_settings_title" >
+        </header>
+    
+    <!-- Launcher Manager-->
+    <header
+        android:id="@+id/launcher_manager_settings"
+        android:icon="@drawable/launcher_manager"
+        android:title="@string/launcher_manager_settings_title" />
+    
+    <!-- Sound Display-->
+    <header
+        android:id="@+id/sounddisplay_settings"
+        android:icon="@drawable/setting_media"
+        android:fragment="com.witsi.settings.display_media.DisplaySettings"
+        android:title="@string/sound_settings" />
+
+    <!-- System Setting -->
+    <header
+        android:id="@+id/system_settings"
+        android:fragment="com.witsi.settings.system.SystemSettings"
+        android:icon="@drawable/setting_stroage"
+        android:title="@string/system_settings_title" />
+    
+
+    <!-- Development -->
+    <header
+        android:id="@+id/development_settings"
+        android:fragment="com.android.settings.DevelopmentSettings"
+        android:icon="@drawable/setting_development"
+        android:title="@string/development_settings_title" />
+
+    <!-- About Device -->
+    <header
+        android:id="@+id/about_settings"
+        android:fragment="com.android.settings.deviceinfo.DeviceInfoSettings"
+        android:icon="@drawable/setting_about"
+        android:title="@string/about_settings" />
+
+</preference-headers>

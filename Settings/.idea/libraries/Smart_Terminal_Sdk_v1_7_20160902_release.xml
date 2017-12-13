@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Smart_Terminal_Sdk_v1.7_20160902_release">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/Smart_Terminal_Sdk_v1.7_20160902_release.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

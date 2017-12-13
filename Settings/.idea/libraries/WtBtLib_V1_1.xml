@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WtBtLib_V1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/WtBtLib_V1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

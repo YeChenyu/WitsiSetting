@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="google-collections-1.0-rc2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/google-collections-1.0-rc2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

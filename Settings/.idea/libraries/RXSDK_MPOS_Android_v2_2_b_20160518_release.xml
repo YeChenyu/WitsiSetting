@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RXSDK_MPOS_Android_v2.2.b_20160518_release">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/RXSDK_MPOS_Android_v2.2.b_20160518_release.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

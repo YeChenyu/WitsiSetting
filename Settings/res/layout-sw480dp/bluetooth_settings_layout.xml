@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.android.settings.wifi.WifiSettings$ProportionalOuterFrame"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <TextView
+            android:id="@+id/wifi_required_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/wifi_required_info_text"
+            android:visibility="gone" 
+            />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="false"
+            android:paddingTop="0dip"
+            android:scrollbars="none"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone" 
+            />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setup_item_margin"
+            android:background="@android:drawable/list_selector_background" />
+
+        <LinearLayout
+            android:id="@+id/other_network"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/setup_item_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:paddingEnd="?android:attr/scrollbarSize" 
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/add_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_add" 
+                />
+
+            <TextView
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/wifi_other_network" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_bar"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/search"
+                android:layout_width="0px"
+                android:layout_height="@dimen/bluetooth_button_height"
+                android:layout_weight="1"
+                android:text="@string/bluetooth_setup_scan"
+                android:textSize="@dimen/bluetooth_button_size"
+                />
+            <Button
+                android:id="@+id/advance"
+                android:layout_width="0px"
+                android:layout_height="@dimen/bluetooth_button_height"
+                android:layout_weight="1"
+                android:text="@string/bluetooth_setup_advance"
+                android:textSize="@dimen/bluetooth_button_size"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smart_brightness_title">Smart backlight</string>
+    <string name="smart_brightness_summary">Auto adjust the backlight.</string>
+    <string name="smart_brightness_preview">Preview mode</string>
+    <string name="hdmi_output_mode">HDMI output mode</string>
+    <string name="hdmi_output_mode_summary">Set the default output mode of HDMI</string>
+    <!-- Audio output mode -->
+    <string name="audio_output_mode_title">音频输出模式</string>
+
+    <!-- Display output mode -->
+    <string name="display_output_mode_title">显示输出模式</string>
+    <string name="display_output_mode_summary">Display output mode</string>
+    <string name="display_mode_time_out_title">Modifying Comfirmation</string>
+    <string name="display_mode_time_out_desc">After %1$s s , it will restore to original preset.\nDo you want to save this change?</string>
+    <string name="display_mode_auto_detect">Auto Detect</string>
+
+    <!-- Constrast and saturation -->
+    <string name="contrast_title">对比度</string>
+    <string name="saturation_title">饱和度</string>
+    <!-- PPPoE -->
+    <string name="pppoe_setting_title">PPPOE Settings</string>
+    <string name="pppoe_setting_device">Network interface</string>
+    <string name="pppoe_setting_user">User name</string>
+    <string name="pppoe_setting_password">Password</string>
+    <string name="pppoe_setting_auto_connect">Automatic connecting</string>
+    <string name="pppoe_setting_toggle">PPPOE</string>
+    <!-- Media scanner -->
+    <string name="mutil_media_category">Mutil Media</string>
+    <string name="media_scan_title">Enable media scanning on %1$s</string>
+    <string name="usb_storage_usage">USB large storage</string>
+    
+    <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+    <!--           new strings for crane            -->
+    <string name="tscalibration_title">Calibrating the touch screen</string>
+      
+    <!-- Screen Adaption -->
+    <string name="screen_adaption_title">屏幕自适应有效</string>
+    <string name="screen_adaption_summary">Used to adjust size of some games display screen .</string>
+    <string name="screen_adaption_summary_off">The current resolution:</string>
+    <string name="screen_adaption_summary_on">重启后生效</string>
+    <string name="display_mode_selector_title">显示模式</string>
+    <string name="screen_adaption_setting">屏幕自适应</string>
+    
+    <string name="google_market_is_not_found">Application market is not found.</string>
+    <string name="default_tts_speech_is_not_found">Please choice a default tts speech engine and choice a default language.</string>
+
+    <!-- add by cjcheng startttttttttttttttttttttttttttttttttttttt -->
+    <!-- support Internal 3G 2013-04-24 -->
+    <string name="smdt_3g_checkbox_text">Use Internal 3G</string>
+    <string name="smdt_3g_settings_title">Internal 3G</string>
+    <!-- add by cjcheng endddddddddddddddddddddddddddddddddddddddd -->
+
+    <!-- add by cjcheng startttttttttttttttttttttttttttttttt -->
+    <!-- support mouse advance 2013-04-25 -->
+    <string name="mouse_advance_settings_category">IR mouse Mode</string>
+    <string name="mouse_advance">Mouse steps</string>
+    <!-- add by cjcheng endddddddddddddddddddddddddddddddddddddddd -->
+
+    <!-- system update  -->
+    <string name="system_update_section_title" msgid="7815209034443782061">"系统升级"</string>
+    <string name="system_recovery_title" msgid="7815209034443782061">"Recovery 模式"</string>
+    <string name="system_recovery_summary" msgid="7815209034443782061">"重启后进入 Recovery 模式.才能清楚数据或升级系统?"</string>
+    <string name="system_recovery_dialog_massage" msgid="7815209034443782061">"重启后进入 Recovery 模式.才能清楚数据或升级系统?"</string>
+
+	<string name="accelerometer_coordinate_title">Accelerometer coordinate system</string>
+
+
+	<!-- Begin ethernet configure add by shugeLinux@gmail.com @@@@@ -->
+	<string name="eth_settings_title">Ethernet</string>
+	<string name="eth_toggle_title">Use Ethernet</string>
+	<string name="eth_settings">Ethernet Settings</string>
+	<string name="eth_devices">Ethernet Devices</string>
+	<string name="eth_conf">Ethernet Configure</string>
+	<string name="eth_ip_address">IP Address</string>
+	<string name="eth_ip_string">0.0.0.0</string>
+	<string name="eth_mac_address">MAC Address</string>
+	<string name="eth_mac_string">00:00:00:00:00:00</string>
+	<string name="eth_advanced_configure">Advanced Configure</string>
+	<string name="eth_mask_address">Mask Address</string>
+	<string name="eth_dns_address">DNS Server</string>
+	<string name="eth_gw_address">GateWay</string>
+	<string name="eth_dhcp_choice">DHCP</string>
+	<string name="eth_dev_more">None Device</string>
+	<string name="eth_dev_summaryoff">DISCONNECTED</string>
+	<string name="eth_dev_summaryon">CONNECTED -- USED DEVICE: </string>
+	
+	<string name="eth_link_status">Link Status</string>
+	<string name="eth_link_mode">Link Mode</string>
+	<string name="eth_ip_mode">IP Mode: </string>
+	<string name="eth_dhcp_mode">DHCP</string>
+	<string name="eth_manual_mode">MANUAL</string>
+	<string name="eth_ok">Ok</string>
+	<string name="eth_cancel">Cancel</string>
+	<string name="eth_advand">Advand</string>
+	<string name="eth_message">Are you apply this device?</string>
+	<!-- End ethernet configure add by shugeLinux@gmail.com @@@@@ -->
+
+    <!-- Blu ray -->
+    <string name="enable_blu_ray_directory_play_title">Enbale Blu Ray directory play mode</string>
+    <string name="enable_blu_ray_directory_play_summary">You can play the Blu Ray directory automatically when you select one in the FileManager.</string>
+	<!-- begin system work mode -->
+  <string name="system_work_mode">Faster</string>
+  <!-- End system work mode -->
+       
+</resources>
