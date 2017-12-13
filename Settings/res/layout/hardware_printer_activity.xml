@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_printer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="打印机测试"
+        android:textColor="#0000ff"
+        android:textSize="50sp" 
+        android:padding="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/printer_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_printer"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/prnStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/printer_line1"
+        android:background="@drawable/textview_border"
+        android:text="@string/printer_status_init"
+        android:textColor="@color/blue" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll"
+        android:layout_below="@+id/printer_line1"
+        android:layout_marginBottom="0dip" >
+
+        <TextView
+            android:id="@+id/prnContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+			android:textSize="30sp"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/printer_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+    
+	<include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_toolbar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    />
+    
+	<LinearLayout 
+	    android:id="@+id/ll"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_above="@+id/printer_line2"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+	    >
+	    <TextView 
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="灰度值"
+	        android:textSize="25sp"
+	        android:gravity="center_vertical"
+	        />
+	    <SeekBar 
+	        android:id="@+id/sk_grey"
+	        android:layout_width="0px"
+	        android:layout_weight="4"
+	        android:layout_height="wrap_content"
+	        />
+	    <TextView 
+	        android:id="@+id/tv_grey"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="15"
+	        android:textSize="25sp"
+	        android:gravity="center"
+	        />
+	</LinearLayout>
+    <Button
+        android:id="@+id/prn_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/printer_line2"
+        android:layout_alignParentLeft="true"
+        android:onClick="startPrintBtnOnClickHandler"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:text="@string/start_print" 
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/printer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bg_transport" />
+
+</RelativeLayout>

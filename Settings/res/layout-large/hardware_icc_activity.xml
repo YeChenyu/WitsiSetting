@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_icc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IC卡测试"
+        android:textColor="#0000ff"
+        android:padding="10dp"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/icc_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_icc"
+        android:background="#ff0000" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/icc_line1"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45sp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/options_name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45sp"
+                android:layout_weight="4"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/icc_value_init"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/status_tag"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/status_value"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="4"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/status_value_init"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="90sp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/atr_tag"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/atr_value"
+                android:layout_width="0dp"
+                android:layout_height="90sp"
+                android:layout_weight="4"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/atr_value_init"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/random_tag"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/random_value"
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="4"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/random_value_init"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/ic_card_btn"
+                android:layout_width="0dp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:text="@string/sam2_card_btn_name" />
+
+            <Button
+                android:id="@+id/sam1_card_btn"
+                android:layout_width="0dp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:text="@string/sam3_card_btn_name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/nfc_card_btn"
+                android:layout_width="0dp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:text="PICC" />
+
+            <Button
+                android:id="@+id/card_btn"
+                android:layout_width="0dp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="@string/sam3_card_btn_name"
+                android:textColor="#adeaea" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icc_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+    <include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_tool_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    />
+
+    <TextView
+        android:id="@+id/iccChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/icc_line1"
+        android:text="当前为IC卡测试"
+        android:textColor="#ff0000"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/icc_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/lucency" />
+
+</RelativeLayout>

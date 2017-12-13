@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_gprs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="GPRS测试"
+        android:textColor="#0000ff"
+        android:padding="10dp"
+        android:textSize="50sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/gprs_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_gprs"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/printer_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+    
+    <TextView
+        android:id="@+id/signalstrength_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gprs_line1"
+        android:layout_alignParentLeft="true"
+        android:background="#00ff00"
+        android:text="信号强度："
+        android:textColor="#ff0000"
+        android:textSize="25sp" />
+    
+    <TextView
+        android:id="@+id/gprs_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/signalstrength_show"
+        android:text="卡槽状态"
+        android:textColor="#ff0000"
+        android:textSize="25sp" />
+    
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/gprs_line1"
+        android:layout_below="@+id/gprs_line1"
+	    >
+	    <ScrollView 
+	        android:layout_width="0px"
+	        android:layout_height="450dp"
+	        android:layout_weight="1"
+	        android:background="#cdcdcd"
+	        >
+			<TextView
+		        android:id="@+id/networkTest_show"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#cdcdcd"
+		        android:text="网络数据测试：" 
+		        />
+		</ScrollView>
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        >
+	        <ScrollView 
+	            android:layout_width="fill_parent"
+		        android:layout_height="380dp"
+		        android:background="#cdcdcd"
+		        >
+	        <TextView
+		        android:id="@+id/baseStation_show"
+		        android:layout_width="fill_parent"
+		        android:layout_height="380dp"
+		        android:background="#cdcdcd"
+		        android:text="baseStation_show"
+		         />
+	        </ScrollView>
+	        <Button
+		        android:id="@+id/gprs_parameter"
+		        android:layout_width="fill_parent"
+		        android:layout_height="70dp"
+		        android:text="查看GPRS参数" 
+		        android:textSize="25sp"/>
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	<include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_toolbar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    />
+    <TextView
+        android:id="@+id/gprs_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#55ff0000"
+        android:textSize="100dp" 
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/tv_show"
+        android:layout_marginLeft="5dp"
+		android:textColor="#ff0000"
+		android:textSize="20sp"
+        android:text="插入手机卡后请重启机器！！" />
+<ImageView
+        android:id="@+id/gprs_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+    
+        android:src="@drawable/bg_transport" />
+
+<TextView
+    android:id="@+id/tv_show"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/printer_line2"
+    android:layout_margin="5dp"
+    android:layout_alignParentLeft="true"
+    android:textColor="#ff0000"
+    android:textSize="20sp"
+    android:text="如果长时间没有反映，请点击“测试”键" />
+
+</RelativeLayout>

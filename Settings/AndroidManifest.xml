@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.witsi.setting1"
+    android:versionCode="1"
+    android:versionName="1.2.7" 
+    >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 授权访问 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 向SD卡写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+	<uses-feature android:name="android.hardware.camera" /> 
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    <uses-permission android:name="android.permission.ARQ_KEY" />
+    <uses-permission android:name="android.permission.ARQ_MAGC" />
+    <uses-permission android:name="android.permission.ARQ_ICC" />
+    <uses-permission android:name="android.permission.ARQ_SECURITY" />
+    <uses-permission android:name="android.permission.ARQ_MISC" />
+    <uses-permission android:name="android.permission.ARQ_UPDATE" />
+    <uses-permission android:name="android.permission.ARQ_PRINTER" />
+	<uses-permission android:name="android.permission.ARQ_EMV_COMMON" />
+    <uses-permission android:name="android.permission.ARQ_EMV_FILE" />
+    <uses-permission android:name="android.permission.ARQ_EMV_LIB" />
+    <uses-permission android:name="android.permission.ARQ_LCD" />
+    <uses-permission android:name="android.permission.ARQ_FILEOPS" /> 
+    <uses-permission android:name="android.permission.ARQ_ENCRYPTION" />    
+    <uses-permission android:name="android.permission.ARQ_KEYREL" /> 
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/childish_gears"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="com.witsi.activitys.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.WifiActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.BluetoothActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.setting.manager.ManagerActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+        </activity>
+	        <activity
+	            android:name="com.witsi.setting.manager.ScreenConfigActivity"
+	            android:label="@string/app_name" 
+	            android:theme="@android:style/Theme.Holo.NoActionBar">
+	        </activity>
+	        <activity
+	            android:name="com.witsi.setting.manager.ConfigActivity"
+	            android:label="@string/app_name" 
+	            android:theme="@android:style/Theme.Holo.NoActionBar">
+	        </activity>
+	       
+	        
+        <activity
+            android:name="com.witsi.activitys.NetworkActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+	        <activity
+	            android:name="com.witsi.settings.ApnSettings"
+	            android:label="@string/app_name" 
+	            android:theme="@android:style/Theme.Holo.NoActionBar">
+	        </activity>
+	        
+	        
+        <activity
+            android:name="com.witsi.activitys.VoiceActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.DisplayActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:configChanges="fontScale"
+            android:permission="android.permission.CHANGE_CONFIGURATION"
+            >
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.SelfTestActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.AboutDeviceActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.witsi.activitys.WorkStatusActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+        </activity>
+        
+<!-- ================   设备自检   ======================================================================================================================== -->
+        <activity
+            android:name="com.witsi.setting.hardwaretest.EntryActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        <activity android:name="com.witsi.setting.hardwaretest.SingleTestActivity" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.BurnningActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        
+        <activity android:name="com.witsi.setting.hardwaretest.BurnningConfigActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.TradeActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.tradetest.MagcPowerTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        
+        
+        <activity android:name="com.witsi.setting.hardwaretest.TouchScreenActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        
+        
+        <activity
+            android:name="com.witsi.setting.hardwaretest.KeyActivity"
+            android:label="@string/keytest_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.MagcActivity"
+            android:label="@string/magctest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.IccActivity"
+            android:label="@string/icctest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.SamActivity"
+            android:label="@string/icctest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.RfActivity"
+            android:label="@string/icctest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.SecurityActivity"
+            android:label="@string/securitytest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.VersionActivity"
+            android:label="@string/versiontest_name"
+            android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.BuzzerActivity"
+            android:label="@string/buzzertest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity
+            android:name="com.witsi.setting.hardwaretest.LedActivity"
+            android:label="@string/ledtest_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+		<activity android:name="com.witsi.setting.hardwaretest.CameraActivity" 
+	        android:screenOrientation="portrait"
+	        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+	        ></activity>
+        
+        <activity android:name="com.witsi.setting.hardwaretest.SerialNumberActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.CmdActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.WifiActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.ResultTableActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.WifiAdmin" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.PrinterActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.GPRS_Activity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.ScreenActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.ScreenCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+             ></activity>
+        
+        <activity android:name="com.witsi.setting.hardwaretest.TF_Activity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        
+        <activity android:name="com.witsi.setting.hardwaretest.RtcActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.LockSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+             ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.ScreenSleepActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+             ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.MediaRecordActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.BluetoothActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.DrawView" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity android:name="com.witsi.setting.hardwaretest.FileExplorerActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            ></activity>
+        <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.TransDemo"
+            android:screenOrientation="portrait" 
+            ></activity>   
+        <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.MagcPowerTest"
+            android:screenOrientation="portrait" 
+            ></activity>   
+        <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.SetMKeyDemo"
+            android:screenOrientation="portrait" 
+            ></activity>  
+           
+        <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.SetWKeyDemo"
+            android:screenOrientation="portrait" 
+            > </activity>  
+        
+        <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.EmvInitDemo"
+            android:screenOrientation="portrait" 
+            ></activity>    
+        
+       <activity 
+            android:name="com.witsi.setting.hardwaretest.tradetest.GotoCmdDemo"
+            android:screenOrientation="portrait" 
+            ></activity> 
+        
+        
+        
+        
+        <service android:name="android.example.bluetooth.FxService" android:enabled="true"></service>
+        <activity 
+            android:name="android.example.bluetooth.DeviceScanActivityII"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="@string/app_name" >
+        </activity>    
+        <service android:name="com.witsi.bluetooth.four.BluetoothLeService" android:enabled="true"/>
+        
+    </application>
+
+</manifest>

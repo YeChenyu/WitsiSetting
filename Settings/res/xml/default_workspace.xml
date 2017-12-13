@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:witsi="com.witsi.laucher"
+    >
+
+     <screen
+        launcher:id = "0"
+        launcher:row_num="3">
+        <favorite
+	        launcher:packageName="com.android.settings"
+	        launcher:className="com.android.settings.Settings"
+	        launcher:row="0"
+	        launcher:cloum="0" 
+	        launcher:color = "#ED643B"
+	        launcher:weight = "1"
+	        witsi:icons = "childish_gears.png"
+	        launcher:lablesize = "35"/>
+         <favorite
+	        launcher:packageName="com.example.android_equipment_text1"
+	        launcher:className="com.example.android_equipment_test.EntryActivity"
+	        launcher:row="1"
+	        launcher:cloum="0" 
+	        launcher:color = "#0A92FB"
+	        launcher:weight = "0.5"
+	        witsi:icons = "childish_game_pad.png"
+	        launcher:lablesize = "25"/>
+        <favorite
+	        launcher:packageName="com.estrongs.android.pop.cupcake"
+	        launcher:className="com.estrongs.android.pop.cupcake.view.FileExplorerActivity"
+	        launcher:row="1"
+	        launcher:cloum="1" 
+	        launcher:color = "#84CB2C"
+	        launcher:weight = "0.5"
+	        witsi:icons = "childish_folder.png"
+	        launcher:lablesize = "25"/>
+        <favorite
+	        launcher:packageName="com.android.gallery3d"
+	        launcher:className="com.android.camera.CameraLauncher"
+	        launcher:row="2"
+	        launcher:cloum="0" 
+	        launcher:color = "#EB601C"
+	        launcher:weight = "0.5"
+	        witsi:icons = "childish_camera.png"
+	        launcher:lablesize = "20"/>
+        <favorite
+	        launcher:packageName="com.witsi.setting"
+	        launcher:className="com.witsi.activity.MainActivity"
+	        launcher:row="2"
+	        launcher:cloum="1" 
+	        launcher:color = "#6870B8"
+	        launcher:weight = "0.5"
+	        witsi:icons = "childish_globe.png"
+	        launcher:lablesize = "20"/>
+     </screen>
+     <screen
+        launcher:id = "1"
+        launcher:row_num = "3">
+        <favorite
+	        launcher:packageName="com.android.gallery3d"
+	        launcher:className="com.android.camera.CameraLauncher"
+	        launcher:row="0"
+	        launcher:cloum="0" 
+	        launcher:color = "#FFFFFF"
+	        launcher:weight = "0.5"
+	        launcher:lablesize = "20"/>
+        <favorite
+	        launcher:packageName="com.rockchip.wifidisplay"
+	        launcher:className="com.rockchip.wifidisplay.FullscreenActivity"
+	        launcher:row="0"
+	        launcher:cloum="1" 
+	        launcher:color = "#FFFFFF"
+	        launcher:weight = "0.5"
+	        launcher:lablesize = "25"/>
+        <favorite
+	        launcher:packageName="com.android.videoeditor"
+	        launcher:className="com.android.videoeditor.ProjectsActivity"
+	        launcher:row="1"
+	        launcher:cloum="0" 
+	        launcher:color = "#FFFFFF"
+	        launcher:weight = "0.5"
+	        launcher:lablesize = "25"/>
+        <favorite
+	        launcher:packageName="com.android.speechrecorder"
+	        launcher:className="com.android.speechrecorder.SpeechRecorderActivity"
+	        launcher:row="1"
+	        launcher:cloum="1" 
+	        launcher:color = "#FFFFFF"
+	        launcher:weight = "0.5"
+	        launcher:lablesize = "20"/>
+     </screen> 
+   
+      <!-- 该标签有效的话则除脚本配置外显示所有的应用； -->
+    <!--   
+      <screen
+        launcher:id = "-1"
+        launcher:row_num = "4"
+        >
+     </screen>  -->
+
+</favorites>
