@@ -1,0 +1,520 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" 
+    android:background="@color/white"
+    >
+	<include 
+	    android:id="@+id/action_back"
+	    layout="@layout/action_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+    
+    <!-- **************************************************************** -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+	        <LinearLayout 
+	            android:orientation="vertical"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            style="@style/base_layout"
+	            >
+	           
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="电池状态"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="电池状态"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+			<View style="@style/bg_line"/>		
+					
+			<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="电池剩余电量"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="电池剩余电量"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+		</LinearLayout>
+		       
+		<!-- **************************************************************** -->
+		
+		<LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/base_layout"
+            >
+		    <RelativeLayout 
+		        android:id="@+id/tv8"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dp"
+			    android:background="@drawable/block_top_selector"
+			    >
+			    <TextView
+			        android:id="@+id/tmp1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="SIM卡状态"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        android:layout_alignParentLeft="true"
+			        />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="SIM卡相关信息"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        android:layout_alignParentLeft="true"
+			        android:layout_below="@+id/tmp1"
+			        />
+			    <ImageView 
+			        android:id="@+id/iv1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/right"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"/>
+			</RelativeLayout>
+			<include 
+			    android:id="@+id/sim"
+			    layout="@layout/about_device_worksim_layout"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:visibility="gone"
+			    />
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			 <!-- 分割线 -->
+			<View style="@style/bg_line"/>		      
+			       
+			<!-- **************************************************************** -->
+		    <RelativeLayout 
+		        android:id="@+id/tv9"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="10dp"
+			    android:background="@drawable/block_bottom_selector"
+			    >
+			    <TextView
+			        android:id="@+id/tmp2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="IMEI信息"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        android:layout_alignParentLeft="true"
+			        />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="IMEI相关信息"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        android:layout_alignParentLeft="true"
+			        android:layout_below="@+id/tmp2"
+			        />
+			    <ImageView 
+			        android:id="@+id/iv2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/right"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        />
+			</RelativeLayout>
+			<include 
+			    android:id="@+id/imei"
+			    layout="@layout/about_device_workimei_layout"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:visibility="gone"
+			    />
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+		</LinearLayout>
+		
+		<!-- **************************************************************** -->
+		<LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/base_layout"
+            >
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="IP地址"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="IP地址"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+			<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="WLANMAC地址"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="WLANMAC地址"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="蓝牙地址"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="蓝牙地址"
+			        android:textSize="20dp"
+			       android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			       <!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+			
+<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="蓝牙模块版本"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv_btmodule"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="4.0"
+			        android:textSize="20dp"
+			       android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			       <!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="WIFI模块版本"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv_wifimodule"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="V1.2.0"
+			        android:textSize="20dp"
+			       android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			       <!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="4G模块版本"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv_3Gmodule"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="V2.0.2"
+			        android:textSize="20dp"
+			       android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			       <!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+			<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="序列号"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="序列号"
+			        android:textSize="20dp"
+			       android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+			<View style="@style/bg_line"/>	
+			
+			
+			
+			<!-- **************************************************************** -->
+		    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			    >
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="已开机时间"
+			        android:textSize="25dp"
+			        android:textColor="@color/black"
+			        />
+			    <TextView
+			        android:id="@+id/tv7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="已开机时间"
+			        android:textSize="20dp"
+			        android:textColor="@color/gray_dark"
+			        />
+			</LinearLayout>
+			<!-- <TextView 
+			       android:layout_width="fill_parent"
+			       android:layout_height="0.1dp"
+			       android:background="@color/gray_white"
+			       android:layout_marginLeft="5dp"
+			       android:layout_marginRight="5dp"
+			       android:padding="0dp"/> -->
+			</LinearLayout>
+       </LinearLayout>
+	</ScrollView>
+</LinearLayout>

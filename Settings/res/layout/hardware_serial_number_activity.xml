@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_serial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="序列号测试"
+        android:textColor="#0000ff"
+        android:textSize="50sp" 
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/serial_number_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_serial_number"
+        android:background="#ff0000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/serial_number_line1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@drawable/textview_title"
+                android:gravity="center"
+                android:text="序列号"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t1_serial_number_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="30sp" 
+                android:text="FFFFFFFF"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200sp" >
+
+            <Button
+                android:id="@+id/get_serial_number_btn"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="获取序列号"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/serial_number_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+	
+	<include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_toolbar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    />
+
+    <ImageView
+        android:id="@+id/serial_number_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bg_transport" />
+    
+
+</RelativeLayout>

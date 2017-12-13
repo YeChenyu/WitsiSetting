@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" 
+    style="@style/base_layout"
+    >
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:layout_margin="5dp"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="设置屏幕休眠时间"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		</RelativeLayout>
+		<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	    <RelativeLayout 
+	        android:id="@+id/s15"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_top_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="15秒"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/s30"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="30秒"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb1"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/m1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="1分钟"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb2"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/m5"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="5分钟"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb3"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/m10"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="10分钟"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb4"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/m30"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_bottom_selector"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="30分钟"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb5"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			<!-- 分割线 -->
+          <View style="@style/bg_line"/>
+   
+    <!-- **************************************************************** -->
+	    <RelativeLayout 
+	        android:id="@+id/none"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_bottom_selector"
+		    android:visibility="gone"
+		    >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="永不休眠"
+		        android:textSize="20sp"
+		        android:textColor="@color/black"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        />
+		    <RadioButton 
+	            android:id="@+id/cb6"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:text=""
+	            android:layout_alignParentRight="true"
+	            style="@android:style/Widget.CompoundButton.CheckBox"
+	            android:layout_centerVertical="true"
+	            />
+		</RelativeLayout>
+	<!-- <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="0.1dp"
+	       android:background="@color/gray_white"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginRight="10dp"
+	       android:padding="0dp"/> -->
+			
+   
+</LinearLayout>

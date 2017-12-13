@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="UseCompoundDrawables" 
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="2dp"
+    android:paddingRight="2dp"
+    android:background="@drawable/block_selector"
+    >
+    <LinearLayout 
+        android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_vertical"
+	    >
+	    
+	    <ImageView
+	        android:id="@+id/iv"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_gravity="center"
+	        android:src="@drawable/ic_launcher1"
+	        android:contentDescription="@string/app_name" 
+	        android:padding="5dp"
+	        />
+	    <TextView
+	        android:id="@+id/tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/app_name"
+	        android:gravity="center"
+	        android:textSize="35sp" 
+	        android:text="WI-FI"
+	        android:textColor="@color/black"
+	        android:layout_marginLeft="10dp"
+	        />
+	</LinearLayout>
+</RelativeLayout>

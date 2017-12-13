@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" 
+    android:background="@color/blue_lightsea"
+	>
+	<include 
+	    android:id="@+id/action_back"
+	    layout="@layout/action_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:gravity="center"
+        >
+		<com.witsi.views.SinkView
+		    android:id="@+id/sink"
+		    android:layout_width="150dp"
+		    android:layout_height="150dp"
+		    />
+    </LinearLayout>
+	<LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+		<ListView 
+		    android:id="@+id/lv_menu"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="9"
+		    android:dividerHeight="0dp"
+		    />
+		<Button 
+		    android:id="@+id/btn"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="1"
+		    android:textSize="20dp"
+		    android:layout_margin="10dp"
+		    android:text="完成"
+		    android:background="@drawable/selector_button"
+		    />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

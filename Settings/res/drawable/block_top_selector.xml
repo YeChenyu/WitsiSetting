@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"
+    android:dither="true"
+    android:variablePadding="true"
+    >
+    <item android:state_pressed="false">
+        <shape>  
+		    <solid android:color="#E6E6E6" />  
+		    <corners  android:topLeftRadius="10dp" android:topRightRadius="10dp"/>
+		</shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>  
+		    <solid android:color="#00BFFF" />
+		    <corners  android:topLeftRadius="10dp" android:topRightRadius="10dp"/>
+		</shape>
+    </item>
+</selector>

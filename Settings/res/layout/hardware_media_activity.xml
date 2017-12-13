@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_buzzer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="音频测试"
+        android:textColor="#0000ff"
+        android:padding="10dp"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/buzzer_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_buzzer"
+        android:background="#ff0000" />
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="70sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buzzer_line1"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/textview_title"
+        android:gravity="center"
+        android:text="扬声器测试"
+        android:textColor="@color/red"
+        android:textSize="20sp" 
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="70sp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="播放"
+        android:textSize="20sp" />
+	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_title"
+        android:gravity="center"
+        android:text="录音测试"
+        android:textColor="@color/red"
+        android:textSize="20sp" 
+        />
+	<RelativeLayout 
+	    android:id="@+id/rl_1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textView2"
+	    android:padding="10dp"
+	    >
+	    <ImageView  
+		    android:id="@+id/dialog_img"
+	    	android:layout_width="100dp"
+	    	android:layout_height="100dp"
+	    	android:src="@drawable/record_animate_01"
+	    	android:layout_centerVertical="true"
+	    	android:layout_marginRight="20dp"
+	    	android:layout_marginLeft="20dp"
+    		/>	  
+   		<Button
+	        android:id="@+id/button2"
+	        android:layout_width="300dp"
+	        android:layout_height="70sp"
+	        android:gravity="center"
+	        android:text="点击开始录音"
+	        android:textSize="20sp" 
+	        android:layout_toRightOf="@+id/dialog_img"
+	        />
+	    <Button
+	        android:id="@+id/button3"
+	        android:layout_width="300dp"
+	        android:layout_height="70sp"
+	        android:gravity="center"
+	        android:text="播放录音"
+	        android:textSize="20sp" 
+	        android:layout_toRightOf="@+id/dialog_img"
+	        android:layout_below="@+id/button2"
+	        android:enabled="false"/>
+	</RelativeLayout>
+	<ProgressBar 
+	    android:id="@+id/pb"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/rl_1"
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    />
+    <TextView
+        android:id="@+id/buzzer_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+	
+	<include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_toolbar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    />
+
+    <ImageView
+        android:id="@+id/buzzer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       
+        android:src="@drawable/bg_transport" />
+
+    <Button
+        android:id="@+id/buzzer_weak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="#00ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

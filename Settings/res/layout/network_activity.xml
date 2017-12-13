@@ -1,0 +1,389 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" 
+    android:background="@color/white"
+	>
+	<include 
+	    android:id="@+id/action_back"
+	    layout="@layout/action_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<ScrollView 
+	    android:id="@+id/sv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="10dp"
+	        >
+			<TextView 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="20sp"
+			    android:textColor="@color/black" 
+			    android:padding="5dp"
+			    android:text="设备模式"
+			    android:background="@drawable/title_gray_shape"
+			    />
+			<RelativeLayout 
+			    android:id="@+id/rl4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:padding="10dp"
+			    android:background="@drawable/block_round_selector"
+		        >
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="飞行模式"
+			        android:textSize="25sp"
+			        android:textColor="@color/black"
+			        android:layout_centerVertical="true"
+			        />
+		        <CheckBox 
+		            android:id="@+id/cb4"
+		            android:layout_width="60dp"
+		            android:layout_height="60dp"
+		            android:text=""
+		            android:layout_alignParentRight="true"
+		            style="@android:style/Widget.CompoundButton.CheckBox"
+		            android:layout_centerVertical="true"
+		            />
+		    </RelativeLayout>
+			<TextView 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="20sp"
+			    android:textColor="@color/black" 
+			    android:padding="5dp"
+			    android:text="数据网络"
+			    android:background="@drawable/title_gray_shape"
+			    android:layout_marginTop="10dp"
+			    />
+			<LinearLayout 
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        style="@style/base_layout"
+		        >
+				<RelativeLayout 
+				    android:id="@+id/rl"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:background="@drawable/block_top_selector"
+			        >
+			        <TextView
+			            android:id="@+id/tmp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="移动数据网络"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+			        <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="允许通过移动网络存取数据"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        android:layout_below="@+id/tmp"
+				        />
+			        <CheckBox 
+			            android:id="@+id/cb"
+			            android:layout_width="60dp"
+			            android:layout_height="60dp"
+			            android:text=""
+			            android:layout_alignParentRight="true"
+			            style="@android:style/Widget.CompoundButton.CheckBox"
+			            android:layout_centerVertical="true"
+			            />
+			    </RelativeLayout>
+			<!-- 	<TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+				 <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	<!-- ====================================================================================================================== -->					
+				
+				
+				
+				<RelativeLayout 
+				    android:id="@+id/rl1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:background="@drawable/block_selector"
+			        >
+			        <TextView
+			            android:id="@+id/tmp1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="移动数据网络漫游"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+			        <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="漫游时连接到移动网络服务"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        android:layout_below="@+id/tmp1"
+				        />
+			        <CheckBox 
+			            android:id="@+id/cb1"
+			            android:layout_width="60dp"
+			            android:layout_height="60dp"
+			            android:text=""
+			            android:layout_alignParentRight="true"
+			            style="@android:style/Widget.CompoundButton.CheckBox"
+			            android:layout_centerVertical="true"
+			            />
+			    </RelativeLayout>
+			<!-- 	<TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+				 <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	<!-- ====================================================================================================================== -->					
+				
+				
+				<LinearLayout 
+				    android:id="@+id/ll"
+				    android:orientation="vertical"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:background="@drawable/block_selector"
+				    >
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="首选网络类型"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+				    <TextView
+				        android:id="@+id/tv3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="首选网络类型"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        />
+				</LinearLayout>
+			<!-- 	<TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+				 <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	<!-- ====================================================================================================================== -->					
+				
+				<LinearLayout 
+				    android:id="@+id/ll1"
+				    android:orientation="vertical"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:background="@drawable/block_selector"
+				    >
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="接入点名称（APN）"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+				    <TextView
+				        android:id="@+id/tv1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="接入点名称（APN）"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        />
+				</LinearLayout>
+			<!-- 	<TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/> -->
+			        <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	<!-- ====================================================================================================================== -->					
+				
+				
+				<LinearLayout 
+				    android:id="@+id/ll2"
+				    android:orientation="vertical"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:background="@drawable/block_bottom_selector"
+				    >
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="网络运营商"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+				    <TextView
+				        android:id="@+id/tv2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="网络运营商"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        />
+				</LinearLayout>
+				<!-- <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+				 <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+	<!-- ====================================================================================================================== -->			 
+				 <TextView 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="位置信息访问权限"
+				    android:textSize="20sp"
+				    android:textColor="@color/black"
+				    android:padding="5dp"
+				    android:background="@color/gray_dark"
+				     android:visibility="gone"
+				    />
+				 <RelativeLayout 
+				     android:id="@+id/rl2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:padding="10dp"
+			    android:background="@drawable/block_selector"
+			     android:visibility="gone"
+			        >
+			        <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="GPS"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+			        <com.witsi.views.SlipButton
+			            android:id="@+id/sw"
+				        android:layout_width="100dp"
+				        android:layout_height="35dp"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        />
+			    </RelativeLayout>
+				<!-- <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+				 <!-- 分割线 -->
+	<!-- ====================================================================================================================== -->			 
+				 <RelativeLayout 
+				    android:id="@+id/rl3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="10dp"
+		    android:padding="10dp"
+		    android:background="@drawable/block_selector"
+		    android:visibility="gone"
+			        >
+			        <TextView
+			            android:id="@+id/tmpp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="位置信息来源"
+				        android:textSize="25sp"
+				        android:textColor="@color/black"
+				        />
+			        <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="允许应用使用Wi-Fi或者\n移动网络的位置信息"
+				        android:textSize="20sp"
+				        android:textColor="@color/gray_light"
+				        android:layout_below="@+id/tmpp"
+				        />
+			        <CheckBox 
+			            android:id="@+id/cb2"
+			            android:layout_width="60dp"
+			            android:layout_height="60dp"
+			            android:text=""
+			            android:layout_alignParentRight="true"
+			            style="@android:style/Widget.CompoundButton.CheckBox"
+			            android:layout_centerVertical="true"
+			            />
+			    </RelativeLayout>
+			<!-- 	<TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0.1dp"
+			        android:background="@color/gray_white"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:padding="0dp"/>
+				 -->
+		    </LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

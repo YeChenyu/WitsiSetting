@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Setting_V1.2.7</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- ********   HardwareTest ******************************************************************************************************************* -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="cancel">取消</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+    
+	<string name="begin">开始</string>
+	<string name="send">发送:</string>	
+	<string name="receive">接收:</string>	
+      
+    <string name="lockpattern_recording_incorrect_too_short" >"至少连接4个点，请重试"</string>
+    <string name="lockpattern_error" >"手势密码不对"</string>
+
+	<!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    
+    <!-- MainActivity -->
+	<string name="button_cmd_name">进入命令模式</string>
+	<string name="button_T1_name">T1硬件测试</string>
+	<string name="button_rk_name">RK硬件测试</string>
+	<string name="button_loader_name">下载程序</string>	
+	<string name="button_key_name">设置密码</string>	
+	
+    <!-- ArqActivity -->
+    <string name="key_test_btn_name">按键测试</string>
+    <string name="magc_test_btn_name">磁卡测试</string>
+    <string name="icc_test_btn_name">IC卡测试</string>
+    <string name="rtc_test_btn_name">RTC测试</string> 
+    <string name="security_test_btn_name">获取安全状态</string>     
+    <string name="version_test_btn_name">获取版本号</string>     
+	<string name="buzzer_test_btn_name">蜂鸣器测试</string>     
+	<string name="led_test_btn_name">LED测试</string>    
+	<string name="mem_test_btn_name">存储器测试</string> 	
+	<string name="download_app_btn_name">T1程序升级</string> 	
+	<string name="printer_app_btn_name">打印机测试</string> 		
+		
+    <!-- KeyActivity -->
+    <string name="keytest_name"></string>        
+    <string name="key0_btn_name"></string>    
+    <string name="key1_btn_name"></string>
+    <string name="key2_btn_name"></string>
+    <string name="key3_btn_name"></string>
+    <string name="key4_btn_name"></string>    
+    <string name="key5_btn_name"></string>
+    <string name="key6_btn_name"></string>
+    <string name="key7_btn_name"></string>
+    <string name="key8_btn_name"></string>    
+    <string name="key9_btn_name"></string>
+    <!-- 3029 -->
+    <string name="keyf1_btn_name"></string>
+    <string name="keyf2_btn_name"></string>
+   <!--  
+    <string name="keytest_name">0</string>        
+    <string name="key0_btn_name">0</string>    
+    <string name="key1_btn_name">1</string>
+    <string name="key2_btn_name">2</string>
+    <string name="key3_btn_name">3</string>
+    <string name="key4_btn_name">4</string>    
+    <string name="key5_btn_name">5</string>
+    <string name="key6_btn_name">6</string>
+    <string name="key7_btn_name">7</string>
+    <string name="key8_btn_name">8</string>    
+    <string name="key9_btn_name">9</string>
+    3029
+    <string name="keyf1_btn_name">00</string>
+    <string name="keyf2_btn_name">.</string>
+     -->
+    <!-- 3025 -->
+    <!--     <string name="keyf1_btn_name">F1</string> -->
+   <!--  <string name="keyf2_btn_name">F2</string> -->
+    <string name="keyf3_btn_name">F3</string>    
+    <string name="keyf4_btn_name">F4</string>
+    <string name="keyf5_btn_name">F5</string>
+    <string name="keyf6_btn_name">F6</string>
+    <string name="keyf7_btn_name">F7</string>    
+    <!-- 3025 -->
+   <!--  <string name="keyesc_btn_name">退出</string>
+    <string name="keybs_btn_name">删除</string> -->
+    <!-- 3029 -->
+    <string name="keyesc_btn_name"></string>
+    <string name="keybs_btn_name"></string>
+    <string name="keyenter_btn_name"></string>
+    
+    <string name="timeout_tag">TimeOut: </string>
+    <string name="keyvalue_tag">KeyVal: </string>
+    <string name="keyvalue_init">00</string>
+
+    <!-- MagcActivity -->
+    <string name="magctest_name">磁卡测试</string>
+     <string name="track_name_tag">磁道</string>
+     <string name="success_count_tag">成功</string>  
+	 <string name="track_value_tag">磁道数据</string>      
+     
+    <string name="track1_name">1</string>
+	<string name="track1_count_init">0</string>
+	<string name="track1_value_init">000000000000000000</string>	
+	
+    <string name="track2_name">2</string>
+	<string name="track2_count_init">0</string>
+	<string name="track2_value_init">000000000000000000</string>	
+	
+    <string name="track3_name">3</string>
+	<string name="track3_count_init">0</string>
+	<string name="track3_value_init">000000000000000000</string>	
+
+	<string name="total_name">总计</string>
+	<string name="total_count_init">0</string>
+	<string name="rest_btn_name">复位</string>	
+
+	<!-- IccActivity -->
+	<string name="icctest_name">ICC测试</string>
+	<string name="options_name">选项</string>
+	<string name="icc_value_init">返回值</string>
+	<string name="status_tag">卡状态</string>
+	<string name="status_value_init">卡不存在</string>	
+	<string name="atr_tag">ATR值</string>	
+	<string name="atr_value_init">00000000</string>
+	<string name="random_tag">随机数</string>		
+	<string name="random_value_init">00000000</string>	
+
+	<string name="ic_card_btn_name">IC</string>
+	<string name="sam1_card_btn_name">SAM1</string>	
+	<string name="sam2_card_btn_name">SAM2</string>			
+	<string name="sam3_card_btn_name">SAM3</string>	
+	<string name="nfc_card_btn_name">PICC</string>		
+	
+    <!-- RtcActivity -->
+    <string name="rtctest_name">RTC测试</string>
+	<string name="current_date_title">当前日期与时间</string>   
+    <string name="current_date_value_init">2014年04月08日  11:42:30</string>
+    <string name="set_date_title">设置日期与时间</string> 
+    <string name="set_date_tag_name">设置值:</string> 
+    <string name="set_time_value_hint">YYYYMMDDHHMMSS</string>   
+    <string name="set_date_btn_name">设置RTC</string>     
+	
+	<!-- Security Activity -->
+	<string name="securitytest_name">安全状态测试</string>
+	<string name="security_status_title">状态值</string>	
+	<string name="security_status_value_init">FFFFFFFF</string>	
+	<string name="get_status_btn_name">获取安全状态</string>	
+	
+	<!-- Version Activity -->
+	<string name="versiontest_name">获取版本号</string>
+	<string name="t1_version_tag">版本号</string>	
+	<string name="t1_version_value_init">Version1.0</string>	
+	<string name="get_version_btn_name">获取版本号</string>	
+
+	<!-- Buzzer Activity -->	
+	<string name="buzzertest_name">蜂鸣器测试</string>	
+	<string name="buzzer_test_title">蜂鸣器</string>		
+	<string name="buzzer_start_btn_name">开始</string>	
+	<string name="buzzer_stop_btn_name">停止</string>	
+	
+	<!-- Led Activity -->	
+	<string name="ledtest_name">LED测试</string>	
+	<string name="led_test_title">LED测试</string>		
+	<string name="led1_name">LED1</string>	
+	<string name="led2_name">LED2</string>			
+	<string name="led3_name">LED3</string>
+	<string name="led4_name">LED4</string>	
+	
+	<!-- DownLoad Activity -->
+	<string name="download_app">T1程序升级</string>			
+	<string name="download_btn_name">开始烧写</string>	
+	<string name="import_text_btn_name">普通</string>	
+	<string name="import_app_btn_name">应用</string>	
+	<string name="import_sys_btn_name">系统</string>	
+	<string name="no_permission">没有访问权限</string>
+    <string name="ok">OK</string>
+    <string name="download_system_file">/mnt/sdcard/rxsys.bin</string>
+    <string name="download_application_file">/mnt/sdcard/apprdk.bin</string>    
+		
+	<!-- Printer Activity -->
+	<string name="printer_app">打印机测试</string>		
+	<string name="start_print">打印</string>
+	<string name="printer_status_init">请按打印键开始打印</string>
+	
+	<!-- FileExplorer Activity -->	
+	<string name="fileexplorer_app">选择文件</string>	
+	<string name="parent_dir_tag">查找范围:</string>	
+	<string name="parent_dir_name">sdcard</string>		
+	<string name="file_name_tag">文件名:</string>	
+	<string name="select_cancel_btn_name">取消</string>
+	<string name="select_done_btn_name">打开</string>	
+			
+	<string name="RDP_test_name" >"RDP测试"</string>
+	<string name="Cmd_name" >"命令模式"</string>
+	
+	<string name="checkdata">"12346789"</string>
+	<string name="photo_name">相片名称</string>
+	
+	<!--  BluetoothChat -->
+    <!-- <string name="send">发送</string> -->
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">蓝牙已连接</string>
+<!--     <string name="title_connected_to">蓝牙已连接<xliff:g id="device_name">%1$s</xliff:g></string> -->
+    <string name="title_not_connected">蓝牙未连接</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">没有设备匹配</string>
+    <string name="none_found">未搜索到设备</string>
+    <string name="title_paired_devices">匹配设备</string>
+    <string name="title_other_devices">其他设备</string>
+    <string name="button_scan">搜索</string>
+    
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    
+    <string name="nothing">null</string>
+    <string name="return_activity">返回</string>
+
+    <!-- stand activity -->
+    <string name="China_unionpay">中国银联</string>
+    <string name="use_card_hint">请刷卡\n或插卡</string>
+    <string name="date">date</string>
+
+    <!-- menu activity -->
+    <string name="consume">消  费</string>
+    <string name="setback">撤  销</string>
+    <string name="return_goods">退  货</string>
+    <string name="permission">预授权</string>
+    <string name="off_line">离  线</string>
+    <string name="printer">打  印</string>
+    <string name="adm">管  理</string>
+    <string name="other">其  他</string>
+	
+	      <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">开始扫描蓝牙设备</string>
+    <string name="menu_stop">停止扫描蓝牙设备</string>
+    
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+    <!-- Application name -->
+    <string name="application_name">Mlaucher_V1.2.3</string>
+    <!-- Accessibility-facing application name -->
+    <string name="home">Home</string>
+    <!-- Name for all applications running as this uid. -->
+    <string name="uid_name">Android Core Apps</string>
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Button label on Wallpaper picker screen; user selects this button to set a specific wallpaper -->
+    <string name="wallpaper_instructions">Set wallpaper</string>
+    <!-- Shown when wallpapers are selected in Wallpaper picker -->
+    <!-- String indicating how many media item(s) is(are) selected
+            eg. 1 selected [CHAR LIMIT=30] -->
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <!-- Accessibility string used as a label for a particular wallpaper in the Wallpaper Picker list.
+         e.g. "Wallpaper 3 of 10" -->
+    <string name="wallpaper_accessibility_name">Wallpaper %1$d of %2$d</string>
+
+    <!-- Label on button to delete wallpaper(s) -->
+    <string name="wallpaper_delete">Delete</string>
+    <!-- Label on button in Wallpaper Picker to pick an image -->
+    <string name="pick_image">Pick image</string>
+    <!-- Option in "Select wallpaper from" dialog box -->
+    <string name="pick_wallpaper">Wallpapers</string>
+    <!-- Title of activity for cropping wallpapers -->
+    <string name="crop_wallpaper">Crop wallpaper</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">App isn\'t installed.</string>
+    <!--  Labels for the tabs in the customize drawer -->
+    <string name="widgets_tab_label">Widgets</string>
+
+    <string name="widget_adder">Widgets</string>
+
+    <string name="toggle_weight_watcher">Show Mem</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Touch &amp; hold to pick up a widget.</string>
+    <!-- Market button text.  The market button text is removed in Launcher.java 
+         in the Phone UI. [CHAR LIMIT=32] -->
+    <string name="market">Shop</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+
+    <!-- External-drop widget pick label format string [CHAR_LIMIT=25] -->
+    <string name="external_drop_widget_pick_format" translatable="false">%1$s (%2$d \u00d7 %3$d)</string>
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <string name="external_drop_widget_error">Couldn\'t drop item on this Home screen.</string>
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+    <string name="external_drop_widget_pick_title">Choose widget to create</string>
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <string name="rename_folder_label">Folder name</string>
+    <!-- Title of dialog box -->
+    <string name="rename_folder_title">Rename folder</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="rename_action">OK</string>
+    <!-- Buttons in Rename folder dialog box -->
+    <string name="cancel_action">Cancel</string>
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <string name="menu_item_add_item">Add to Home screen</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <string name="group_applications">Apps</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <string name="group_shortcuts">Shortcuts</string>
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <string name="group_widgets">Widgets</string>
+    <!-- Error message when user has filled all their home screens -->
+    <string name="completely_out_of_space">No more room on your Home screens.</string>
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">No more room on this Home screen.</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">No more room on the hotseat.</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <string name="invalid_hotseat_item">This widget is too large for the hotseat.</string>
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <string name="title_select_shortcut">Choose shortcut</string>
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+    <string name="title_select_application">Choose app</string>
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Apps</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">Home</string>
+    <!-- Label for trash icon on workspace. Meant to communicate the idea of removing the
+         icon/widget from the home screen, but not permanently. [CHAR_LIMIT=30] -->
+    <string name="delete_zone_label_workspace">Remove</string>
+    <!-- Label for trash icon in All Apps. The icon/widget will become completely unavailable on the
+         device. [CHAR_LIMIT=30]-->
+    <string name="delete_zone_label_all_apps">Uninstall</string>
+
+    <!-- Label for delete drop target. [CHAR_LIMIT=30] -->
+    <string name="delete_target_label">Remove</string>
+    <!-- Label for uninstall drop target. [CHAR_LIMIT=30]-->
+    <string name="delete_target_uninstall_label">Uninstall</string>
+    <!-- Label for the info icon. [CHAR_LIMIT=30] -->
+    <string name="info_target_label">App info</string>
+
+    <!-- Accessibility: Search button -->
+    <string name="accessibility_search_button">Search</string>
+    <!-- Accessibility: Voice Search button -->
+    <string name="accessibility_voice_search_button">Voice Search</string>
+    <!-- Accessibility: AllApps button -->
+    <string name="accessibility_all_apps_button">Apps</string>
+    <!-- Accessibility: Delete button -->
+    <string name="accessibility_delete_button">Remove</string>
+
+    <!-- Label for trash icon in All Apps, when an updated system app is selected. The update will
+         be uninstalled. [CHAR_LIMIT=30] -->
+    <string name="delete_zone_label_all_apps_system_app">Uninstall update</string>
+
+    <!-- URL pointing to help text. If empty, no link to help will be created [DO NOT TRANSLATE] -->
+    <string name="help_url" translatable="false"></string>
+
+    <!--  Strings for the contextual action bar (CAB) in All Apps -->
+    <skip />
+    <!-- Describes the button for uninstalling the currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <string name="cab_menu_delete_app">Uninstall app</string>
+    <!-- Describes the button for getting details/info about currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <string name="cab_menu_app_info">App details</string>
+    <!-- Appears in the CAB when an app is selected in All Apps or Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_app_selection_text">1 app selected</string>
+    <!-- Appears in the CAB when a widget is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_widget_selection_text">1 widget selected</string>
+    <!-- Appears in the CAB when a folder is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_folder_selection_text">1 folder selected</string>
+    <!-- Appears in the CAB when a shortcut is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <string name="cab_shortcut_selection_text">1 shortcut selected</string>
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">install shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Allows an app to add
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">uninstall shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">Allows the app to remove
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows the app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows the app to change the settings and
+        shortcuts in Home.</string>
+
+    <!-- Widgets: -->
+    <skip />    
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Problem loading widget</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">This is a system app and can\'t be uninstalled.</string>
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+    <string name="dream_name">Rocket Launcher</string>
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Unnamed Folder</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+    <string name="workspace_description_format">Home screen %1$d</string>
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">Home screen %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">Apps page %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">Widgets page %1$d of %2$d</string>
+
+    <!-- Clings -->
+    <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_title">Welcome!</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_description">Make yourself at home.</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_custom_content_hint"></string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_search_bar_hint"></string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <string name="first_run_cling_create_screens_hint">Create more screens for apps and folders</string>
+    <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
+    <string name="workspace_cling_title">Organize your space</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=160] -->
+    <string name="workspace_cling_move_item">Touch &amp; hold background to manage wallpaper, widgets and settings.</string>
+    <!-- The title text for the All Apps cling [CHAR_LIMIT=60] -->
+    <string name="all_apps_cling_title">Choose some apps</string>
+    <!-- The description of how to pick up and add an item to the workspace [CHAR_LIMIT=160] -->
+    <string name="all_apps_cling_add_item">To add an app to your Home screen, touch &amp; hold it.</string>
+    <!-- The title text for the Folder cling [CHAR_LIMIT=60] -->
+    <string name="folder_cling_title">Here\'s a folder</string>
+    <!-- The description of how to create a folder [CHAR_LIMIT=160] -->
+    <string name="folder_cling_create_folder">To create one like this, touch &amp; hold an app, then move it over another.</string>
+    <!-- The text on the button to dismiss a cling [CHAR_LIMIT=30] -->
+    <string name="cling_dismiss">OK</string>
+    <!-- Error message on dummy custom cling layout [DO NOT TRANSLATE] -->
+    <string name="dummy_custom_cling_error_message">Error: custom workspace layout passed in but custom cling was not overwritten</string>
+    <add-resource type="string" name="default_folder_name" />
+
+    <!-- Folder accessibility -->
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Touch to close folder</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Touch to save rename</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">Folder closed</string>
+
+    <!-- Strings used in device overlays -->
+
+    <!-- Clings -->
+    <!-- Dummy string [CHAR_LIMIT=40] -->
+    <string name="custom_workspace_cling_title_1"></string>
+    <!-- Dummy string [CHAR_LIMIT=60] -->
+    <string name="custom_workspace_cling_description_1"></string>
+    <!-- Dummy string [CHAR_LIMIT=40] -->
+    <string name="custom_workspace_cling_title_2"></string>
+    <!-- Dummy string [CHAR_LIMIT=60] -->
+    <string name="custom_workspace_cling_description_2"></string>
+
+    <!-- Debug-only activity name. [DO NOT TRANSLATE] -->
+    <string name="debug_memory_activity">* HPROF</string>
+
+    <!-- Strings for the customization mode -->
+    <!-- Text for widget add button -->
+    <string name="widget_button_text">Widgets</string>
+    <!-- Text for wallpaper change button -->
+    <string name="wallpaper_button_text">Wallpapers</string>
+    <!-- Text for settings button -->
+    <string name="settings_button_text">Settings</string>
+    
+    
+    
+    
+    
+    
+    
+    <!-- 支付密码框 -->
+    <string name="pay_title">请输入支付密码</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="pay_cancel">取消</string>
+    <string name="pay_content">消费金额：</string>
+    
+    <string name="btn_exit">退出</string>
+    <string name="tmp_title">标题</string>
+    <string name="hint_text">标签</string>
+    <string name="btn_next">下  一  步</string>
+    <string name="btn_ok">确        定</string>
+    <string name="btn_end">完        成</string>
+    <string name="btn_up">上一页</string>
+    <string name="btn_down">下一页</string>
+    <string name="page_default">1/1</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="apn_settings">ApnSettings</string>
+    <!-- APNs screen menu option to create a brand spanking new APN -->
+    <string name="menu_new">New APN</string>
+    <!-- APNs screen menu option to reset default APN settings -->
+    <string name="menu_restore">Reset to default</string>
+    <!-- APNs screen toast message to inform reset default APN settings is completed -->
+    <string name="restore_default_apn_completed">Reset default APN settings completed.</string>
+    <!-- The message of dialog indicated restoring default APN settings in progress -->
+    <string name="restore_default_apn">Restoring default APN settings.</string>
+</resources>

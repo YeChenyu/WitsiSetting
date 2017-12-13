@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title_burn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="拷机测试"
+        android:textColor="#0000ff"
+        android:textSize="50sp" 
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/burn_start_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_burn_start"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/burn_start_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+    
+	<LinearLayout 
+        android:id="@+id/ll_tool"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+	    <Button
+	        android:id="@+id/burn_startGetBackToMain"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="80sp"
+	        android:gravity="center"
+	        android:text="返回 主页" 
+	        android:textSize="30sp"
+	        />
+	
+	    <Button
+	        android:id="@+id/test_burn_start_choose"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="80sp"
+	        android:gravity="center"
+	        android:text="测试  选项" 
+	        android:textSize="30sp"
+	        />
+	
+	    <Button
+	        android:id="@+id/burn_startFalse"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="60sp"
+	        android:gravity="center"
+	        android:text="失败"
+	        android:visibility="gone"
+		/>
+	    
+	    <Button
+	        android:id="@+id/burn_start_ok"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="60sp"
+	        android:gravity="center"
+	        android:text="通过"
+	        android:textColor="#ff0000" 
+	        android:visibility="gone"
+	        />
+	
+	</LinearLayout>
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/burn_start_line1"
+        >
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+		        android:id="@+id/burn_0_5h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="0.5h拷机" 
+		        android:textSize="30sp"
+		        />
+            <Button
+		        android:id="@+id/burn_1h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="1h拷机" 
+		        android:textSize="30sp"
+		        />
+            
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+		        android:id="@+id/burn_2h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="2h拷机" 
+		        android:textSize="30sp"
+		        />
+		
+		    <Button
+		        android:id="@+id/burn_4h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="4h拷机" 
+		        android:textSize="30sp"
+		        />
+            
+        </LinearLayout>
+
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+		        android:id="@+id/burn_24h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="24h拷机" 
+		        android:textSize="30sp"
+		        />
+		            
+            <Button
+		        android:id="@+id/burn_48h"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="48h拷机" 
+		        android:textSize="30sp"
+		        />
+		
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+		        android:id="@+id/burn_Record"
+		        android:layout_width="0px"
+		        android:layout_weight="1"
+		        android:layout_height="100dp"
+		        android:text="拷机记录" 
+		        android:textSize="30sp"
+		        />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/burn_start_line2"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ff0000"
+        android:text="开始拷机前请确定机器的时间正确！！"
+        android:textSize="20sp" 
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:text="点击“测试选项”可以进行拷机项目选择！！"
+        android:textColor="#ff0000" 
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

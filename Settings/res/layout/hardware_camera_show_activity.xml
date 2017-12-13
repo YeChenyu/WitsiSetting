@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/sView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/title_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="照相机测试"
+        android:textColor="#0000ff"
+        android:textSize="35sp" 
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/camera_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_camera"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/camera_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+
+    <include 
+	    android:id="@+id/ll_tool"
+	    layout="@layout/hardware_tool_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    />
+	    
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/camera_line1"
+        android:onClick="capture"
+        android:src="@drawable/capture" 
+        />
+    
+	<TextView 
+	    android:id="@+id/tv_froegound"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@android:color/transparent"
+	    android:text="等待图片生成..."
+	    android:gravity="center"
+	    android:textSize="40sp"
+	    android:visibility="invisible"
+	    android:textColor="#ff0000"
+	    />
+	<TextView
+        android:id="@+id/ifHasCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:text=""
+        android:textColor="#ff0000"
+        android:textSize="50dp" 
+        />
+</RelativeLayout>
