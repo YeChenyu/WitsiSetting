@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/black"
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.9"
+        android:text="鑫蓝科技"
+        android:textSize="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray_light"
+        android:visibility="gone"
+        />
+    <!-- 切换卡 -->
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        android:gravity="bottom"
+         >
+        <com.witsi.setting.manager.MyViewPager
+	         android:id="@+id/viewPager"  
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="20dp"
+	         >  
+    </com.witsi.setting.manager.MyViewPager>  
+    </LinearLayout>
+    <!-- 点点  PageController-->   
+    <LinearLayout  
+        android:id="@+id/pageController"  
+        android:layout_width="fill_parent"  
+        android:layout_height="0px"
+        android:layout_weight="0.5"  
+        android:gravity="center_horizontal|top"  
+        android:layout_gravity="top"
+        android:orientation="horizontal" 
+        android:background="@android:color/transparent"
+        >         
+    </LinearLayout> 
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/result_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/result_top_title" android:background="@drawable/top_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:id="@+id/result_title_text" android:text="@string/tmp_title" style="@style/title_text_style" />
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="match_parent" 
+       android:layout_height="match_parent" 
+       android:layout_below="@+id/result_top_title"
+       >
+        <TextView android:id="@+id/result_lable" android:textSize="25.0sp" 
+       android:textColor="@color/input_title_text_color"  
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:text="@string/hint_text" 
+       android:gravity="center"
+       />
+    </ScrollView>
+   
+   <Button android:id="@+id/result_confirm_button" android:text="@string/btn_end" style="@style/input_commit_button_style"/>
+</RelativeLayout>

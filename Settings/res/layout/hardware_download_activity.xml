@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"	
+	android:background="@drawable/layout_border2"
+    android:paddingLeft="10sp"
+	android:paddingRight="10sp"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="下载测试"
+        android:textColor="#0000ff"
+        android:padding="10dp"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/down_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_down"
+        android:background="#ff0000" />
+    
+    <LinearLayout
+        android:id="@+id/ll_sys"
+        android:layout_below="@+id/down_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:focusable="true"   
+		android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/sys_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:checked="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="importSysFileOnClickHandler"
+			android:textSize="20sp"
+            android:text="@string/import_sys_btn_name" />
+
+        <EditText
+            android:id="@+id/sys_file_path"
+            android:layout_width="0dp"
+            android:layout_height="35sp"
+			android:layout_marginLeft="6sp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_app"
+        android:layout_below="@+id/ll_sys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:focusable="true"   
+		android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/app_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:checked="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="importAppFileOnClickHandler"
+			android:textSize="20sp"
+            android:text="@string/import_app_btn_name" />
+
+        <EditText
+            android:id="@+id/app_file_path"
+            android:layout_width="0dp"
+            android:layout_height="35sp"
+			android:layout_marginLeft="6sp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_below="@+id/ll_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:focusable="true"   
+		android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/text_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/textview_border" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="importTextFileOnClickHandler"
+            android:textSize="20sp"
+            android:text="@string/import_text_btn_name" />
+
+        <EditText
+            android:id="@+id/text_file_path"
+            android:layout_width="0dp"
+            android:layout_height="35sp"
+			android:layout_marginLeft="6sp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="18sp" 
+            android:focusable="false">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_below="@+id/ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical" >
+      
+        <ProgressBar
+		android:id="@+id/procbar"
+ 		android:layout_width="match_parent" 
+		android:layout_height="20sp"
+		android:background="@drawable/textview_border"
+		android:max="100"
+		style="@android:style/Widget.ProgressBar.Horizontal" />
+        
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/textview_border"
+            >
+            <TextView
+	            android:id="@+id/downlaod_status"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:textColor="@color/blue"
+	            android:textSize="17sp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/download_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="downLoadBtnOnClickHandler"
+            android:text="@string/download_btn_name" />
+
+    </LinearLayout>
+	<TextView
+        android:id="@+id/down_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_tool"
+        android:layout_alignParentLeft="true"
+        android:background="#ff0000" />
+
+    <LinearLayout 
+	    android:id="@+id/ll_tool"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    >
+        <Button
+	        android:id="@+id/downGetBackToMain"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="70dp"
+	        android:textSize="20sp"
+	        android:gravity="center"
+	        android:text="返回 主页" />
+	
+	    <Button
+	        android:id="@+id/test_down"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="70dp"
+	        android:textSize="20sp"
+	        android:gravity="center"
+	        android:text="" />
+	
+	    <Button
+	        android:id="@+id/downFalse"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="70dp"
+	        android:textSize="20sp"
+	        android:gravity="center"
+	        android:text="失败" />
+	    
+	    <Button
+	        android:id="@+id/down_test_state"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="70dp"
+	        android:textSize="20sp"
+	        android:gravity="center"
+	        android:text="通过"
+	        android:textColor="#ff0000" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/down_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bg_transport" />
+</RelativeLayout>

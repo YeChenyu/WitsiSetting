@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/button_KEY_OPEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="进入下载模式" />
+
+    <Button
+        android:id="@+id/button_open_T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_KEY_OPEN"
+        android:text="打开 安全芯片" />
+
+    <Button
+        android:id="@+id/button_close_T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_open_T1"
+        android:text=" 关闭安全芯片" />
+
+    <Button
+        android:id="@+id/button_open_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_close_T1"
+        android:text="Open Service" />
+
+    <Button
+        android:id="@+id/button_KEY_CLOSE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_open_service"
+        android:text="开关机时间测试" />
+
+    <Button
+        android:id="@+id/button_close_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_KEY_CLOSE"
+        android:text="Close Service" />
+
+</RelativeLayout>
